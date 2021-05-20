@@ -35,23 +35,23 @@ If it works fine on your computer, a new window will appear. After that, you can
 
 ## How to do it yourself
 
-If you want to compile JCEF, follow these steps below.
+If you want to compile JCEF yourself on Windows, follow these steps below.
 
 1. Download and install CMake (cmake.org)
 2. Go into the directory where you will find vcvars64.bat in c:\Program Files (x86)  
 You usually find this file into C:\Program Files (x86)\"Your version of Visual Studio"\VC\bin\"your x64 architecture"
-2. Run vcvars64.bat
-3. Go into the directory where you downloaded [JCEF project](https://bitbucket.org/chromiumembedded/java-cef)
-4. Create a directory javacef_build into the src directory of JCEF project
-5. Go into this directory
-6. Run this command cmake -G "Visual Studio" -A x64 ..  
+3. Open a command prompt and run vcvars64.bat into the folder of your version of Visual Studio\VC\bin
+4. Go into the directory where you downloaded [JCEF project](https://bitbucket.org/chromiumembedded/java-cef)
+5. Create a directory javacef_build into the src directory of JCEF project
+6. Go into this directory
+7. Run this command cmake -G "Visual Studio" -A x64 ..  
 You will now search the correct name of your Visual Studio at the output text
-7. Run this command cmake -G "&lt;The correct name of your Visual Studio&gt;" -A x64 ..  
+8. Run this command cmake -G "&lt;The correct name of your Visual Studio&gt;" -A x64 ..  
 If it works fine, it will download the CEF package automatically
-8. When it's finished, you have a jcef.sln file. Double click on this file.
-9. When Visual Studio is started and the project is loaded, select Release into the Configuraton Manager
-10. Build the solution  
+9. When it's finished, you have a jcef.sln file. Double click on this file.
+10. When Visual Studio is started and the project is loaded, select Release into the Configuraton Manager
+11. Build the solution  
 This build takes almost two days depending on your computer's performance. When it's finished you will have the compiled .dll
-11. Go to tools from the directory src of java_cef
-12. Run make_distrib.bat
+12. Go to tools from the directory src of java_cef
+14. Run make_distrib.bat
  
