@@ -49,9 +49,9 @@ You will now search the correct name of your Visual Studio at the output text
 7. Run this command cmake -G "&lt;The correct name of your Visual Studio&gt;" -A x64 ..  
 If it works fine, it will download the CEF package automatically
 8. When it's finished, you have a jcef.sln file. Double click on this file.
-9. Select Release into the "Configuraton Manager" from the menu Project
+9. When Visual Studio is started and the project is loaded, select Release into the Configuraton Manager
 10. Build the solution  
-This build takes almost two days. When it's finished you will have the compiled .dll
+This build takes almost two days depending on your performance. When it's finished you will have the compiled .dll
 11. Go to tools from the directory src of java_cef
 12. Run make_distrib.bat
  
