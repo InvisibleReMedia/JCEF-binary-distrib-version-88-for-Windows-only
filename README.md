@@ -47,7 +47,8 @@ You usually find this file into C:\Program Files (x86)\"Your version of Visual S
 7. Run this command cmake -G "Visual Studio" -A x64 ..  
 You will now search the correct name of your Visual Studio at the output text
 8. Run this command cmake -G "&lt;The correct name of your Visual Studio&gt;" -A x64 ..  
-If it works fine, it will download the CEF package automatically
+If it works fine, it will download the CEF package automatically.
+If not, try another architecture name like Win64 or windows64.
 9. When it's finished, you have a jcef.sln file. Double click on this file.
 10. When Visual Studio is started and the project is loaded, select Release into the Configuraton Manager
 11. Build the solution  
